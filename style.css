@@ -1,0 +1,1587 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: dosis;
+    src: url(assets/fonts/Dosis-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(assets/fonts/Roboto-Light.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+/* Page-1 code  */
+
+.head-title {
+    display: flex;
+    background-color: #FFF0F0;
+    height: 42.72px;
+    justify-content: space-between;
+}
+
+.ship ul {
+    list-style: none;
+    display: flex;
+}
+
+.ship ul li {
+    margin: 12px 35px;
+    line-height: 21px;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ship ul li:hover {
+    color: #E96D6D;
+}
+i:hover{
+    
+    color: #E96D6D;
+}
+
+
+.logininfo ul {
+    list-style: none;
+    display: flex;
+}
+
+.logininfo ul li {
+    margin: 12px 25px 0 25px;
+    line-height: 21px;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.logininfo ul li:hover {
+    color: #E96D6D;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 109px;
+
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header ul:not(.drop-content ul) {
+    display: flex;
+}
+
+.header li {
+    list-style: none;
+    margin: 14px;
+    font-family: dosis;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.header li:hover {
+    color: #E96D6D;
+}
+
+/* Drop-down menu  */
+.drop-content {
+    width: 200px;
+    display: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+    color: black;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    /* transition not working */
+}
+
+.drop-content li {
+    padding: 12px 16px;
+    list-style: none;
+}
+
+.drop-content li:hover {
+    background-color: #E9ECEF;
+    color: black;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+.search input {
+    width: 260px;
+    height: 40px;
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    padding-left: 17px;
+}
+
+.search input:focus {
+    border-color: #E96D6D;
+    background-color: #FFFFFF;
+}
+
+.cart-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url(assets/Page-1/shopping-cart-fill.svg);
+    background-size: cover;
+
+}
+
+.cart-icon::after {
+    content: "9+";
+    width: 14px;
+    height: 16px;
+    position: relative;
+    left: 20px;
+    bottom: 6px;
+    display: block;
+    padding: 3px 0 0 6px;
+    font-size: 11px;
+    color: white;
+    background-color: #E96D6D;
+    border-radius: 50%;
+}
+
+.cart-icon:hover {
+    background-image: url(assets/Page-1/shopping-cart-fill_org.svg);
+}
+
+
+
+.bgclr-p1 {
+    height: 1627px;
+    background-color: #F8F8F8;
+    padding-top: 70px;
+}
+
+/* section-1  */
+.main {
+    width: 97.7%;
+    height: 431.59px;
+    margin-left: 17px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body {
+    width: 470px;
+    height: 383px;
+    padding: 38px 0 0 40px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
+.card-body h2 {
+    font-family: dosis;
+    font-weight: 700;
+    font-size: 44px;
+    color: #E96D6D;
+    line-height: 50px;
+    /* white-space: pre-line; */
+
+}
+
+.card-body h6 {
+    margin-top: 16px;
+    font-family: dosis;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #3A4747;
+    white-space: pre-line;
+}
+
+.card-body p {
+    margin-top: 10px;
+    text-align: justify;
+    color: #3A4747;
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    white-space: pre-line;
+
+}
+
+.card-body button {
+    width: 144.34px;
+    height: 42px;
+    margin-top: 16px;
+    padding: 11px 30.67px 11px 31px;
+    border-radius: 44px;
+    border: 1px;
+    color: #FFFFFF;
+    background-color: #E96D6D;
+    font-family: dosis;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card-body button:hover {
+    background-color: #D45A5A;
+}
+
+#special-offer img {
+    border-radius: 30px;
+}
+
+
+
+/* section-2 */
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.drops,
+.material,
+.current {
+    width: 250px;
+    height: 117px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    font-family: dosis;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.drops h4,
+.material h4,
+.current h4 {
+    position: relative;
+    left: 29px;
+}
+
+.drops img {
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.material img {
+    position: relative;
+    top: 20px;
+    left: 26px;
+}
+
+.current img {
+    position: relative;
+    top: 20px;
+    left: 31px;
+}
+
+
+.material,
+.current {
+    margin-top: 17px;
+}
+
+.strickan-leitungen {
+    width: 1050px;
+    height: 384px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.strickan-leitungen .card-body1 {
+    width: 335px;
+    height: 362.59px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 21px 0 0 30px;
+}
+
+
+
+.card-body1 h2 {
+    /* white-space: pre-line; */
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+
+    text-align: left;
+    color: #3A4747;
+}
+
+.card-body1 p {
+    white-space: pre-line;
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+.card-body1 button {
+    width: 219.06px;
+    height: 42px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #E96D6D;
+    cursor: pointer;
+    border-radius: 44px;
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.800000011920929px;
+    position: relative;
+    top: 10px;
+    border: none;
+}
+
+.card-body1 button:hover {
+    background-color: #D45A5A;
+}
+
+.strickan-leitungen .woolimg {
+    height: 384px;
+    width: 680px;
+}
+
+/* section-3  */
+#innovation-heading {
+    margin-top: 60px;
+    text-align: center;
+    font-family: dosis;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    color: #E96D6D;
+    position: relative;
+}
+
+#innovation-heading::after {
+    content: "";
+    display: block;
+    width: 132px;
+    height: 3px;
+    background-color: #E96D6D;
+    position: absolute;
+    top: 55px;
+    left: 610px;
+}
+
+.section3 {
+    padding-left: 12px;
+    margin-top: 56px;
+
+}
+
+.innovations {
+    width: 98.7%;
+    height: 463px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innovations .cards {
+    width: 315px;
+    height: 395px;
+    cursor: pointer;
+}
+
+.innovations .cards img {
+    width: 315px;
+}
+
+.innovations .cards .contain {
+    background-color: #FFFFFF;
+    height: 42px;
+    bottom: 32px;
+    position: relative;
+    border-radius: 30px;
+    padding: 20px;
+    line-height: 14px;
+}
+
+.contain h5 {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A4747;
+}
+
+.contain p {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A4747;
+
+}
+
+.cards #gandu {
+    height: 111px;
+}
+
+.cards #knot-btn {
+    height: 58px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    width: 216.97px;
+    height: 42px;
+    padding: 11px 30.68px 11px 31px;
+    border-radius: 44px;
+    border: none;
+    cursor: pointer;
+    font-family: dosis;
+    color: #FFFFFF;
+    background-color: #E96D6D;
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 0.800000011920929px;
+    text-align: center;
+}
+
+.btn button:hover {
+    background-color: #D45A5A;
+}
+
+/* Section-3 */
+.payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 135px;
+    background-color: #FDF0F0;
+}
+
+.col-md {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.method h5 {
+    font-family: dosis;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1.100000023841858px;
+    color: #3A4747;
+}
+
+.col-md-12 h5 {
+    font-family: dosis;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1.100000023841858px;
+    color: #3A4747;
+}
+
+/* Section-4 */
+/* Footer  */
+
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 238.39px;
+
+
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content h5 {
+    font-family: dosis;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1.100000023841858px;
+    color: #3A4747;
+
+}
+
+.footer-content li {
+    font-family: dosis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.8999999761581421px;
+    color: #3A4747;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.footer-content li:hover {
+    color: #E96D6D;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 67px;
+    border-top: 1px solid rgba(128, 128, 128, 0.288);
+
+}
+
+.footer-bottom h6 {
+    font-family: dosis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.8999999761581421px;
+    text-align: center;
+    color: #3A4747;
+
+}
+
+.footer-bottom p {
+    font-family: dosis;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.699999988079071px;
+    text-align: center;
+    color: rgba(58, 71, 71, 0.33);
+
+}
+
+/*Page-1 ended */
+/* Page-2 started*/
+.bgclr-p2 {
+    height: 100%;
+    background-color: #F8F8F8;
+}
+
+.main-section {
+    width: 98.4%;
+    padding: 40px 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .list {
+    padding-left: 48px;
+    padding-top: 19px;
+    width: 330px;
+    height: 747.95px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+
+}
+
+.list h6 {
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: bolder;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A4747;
+
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list li {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A4747;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.list li:hover,
+.list li h6:hover {
+    color: #E96D6D;
+}
+
+.products {
+    width: 926px;
+
+}
+
+.products .aktuell {
+    width: 906px;
+    height: 94.8px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.aktuell h2 {
+    font-family: dosis;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+
+}
+
+.aktuell-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.aktuell-cards .cards {
+    width: 285px;
+    height: 395px;
+
+}
+
+.aktuell-cards .cards img {
+    cursor: pointer;
+    width: 285px;
+}
+
+.aktuell-cards .cards .contain {
+    background-color: #FFFFFF;
+    height: 42px;
+    bottom: 32px;
+    position: relative;
+    border-radius: 30px;
+    padding: 20px;
+    line-height: 14px;
+}
+
+.aktuell-cards #gutscheine {
+    height: 63px;
+}
+
+.aktuell-cards .cards .contain h5 {
+    font-family: dosis;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+    cursor: pointer;
+}
+
+.aktuell-cards .cards .contain h5:hover {
+    color: #000000;
+}
+
+.aktuell-cards .cards .contain h6 {
+    font-family: Open Sans;
+    display: inline;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A4747;
+}
+
+.aktuell-cards .cards .contain span {
+    font-family: dosis;
+    font-weight: 400;
+    position: relative;
+}
+
+.aktuell-cards .cards .contain span::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 1px;
+    background-color: #3A4747;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+
+/* page-2 ended  */
+/* page-3 started */
+.bgclr-p3 {
+    height: 728px;
+    background-color: #F8F8F8;
+}
+
+.showroom {
+    padding: 43px 0 0 32px;
+}
+
+.show-section {
+    display: flex;
+    width: 98%;
+    height: 431px
+}
+
+.show-laden img {
+    height: 431px;
+    width: 910px;
+}
+
+.show-section .card-body {
+    width: 440px;
+    height: 396px;
+    border-radius: 30px;
+    margin-left: 20px;
+
+
+}
+
+.show-section .card-body h2 {
+    font-family: Dosis;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+}
+
+.show-section .card-body p span:nth-child(1) {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.show-section .card-body p span:nth-child(2) {
+    text-decoration: underline;
+}
+
+.show-section .card-body p {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: pre-line;
+
+}
+
+/* location information */
+.location {
+    width: 96%;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.location .map {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.about-map {
+    width: 522.5px;
+    height: 118px;
+    background-color: #FFFFFF;
+    padding: 8px 0px 0px 4px;
+    border-radius: 30px;
+}
+
+.about-map p {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: pre-line;
+}
+/* Page-3 ended */
+/* Page-4 started */
+.bgclr-p4 {
+    height: 490px;
+    background-color: #F8F8F8;
+}
+
+.wish-page {
+    padding-top: 30px;
+}
+
+.wish-page .wish {
+    width: 97%;
+    height: 380.72px;
+    padding: 38px 0 0 40px;
+    background-color: #FFFFFF;
+    border-radius: 33px;
+
+}
+
+.wish h1 {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.wish h1 img {
+    position: relative;
+    top: 3px;
+}
+
+.wish h6 {
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 69px;
+    letter-spacing: 0.4000000059604645px;
+    color: #E96D6D;
+    cursor: pointer;
+    display: inline;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+
+
+.wish h6:hover {
+
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.089);
+    transform: scale(1);
+}
+
+.wish h6 img {
+    position: relative;
+    top: 4px;
+}
+
+.wish p {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 40px 35px 0 0;
+
+}
+
+/* Page-4 ended */
+/* Page-5 started */
+.bgclr-p5 {
+    background-color: #F8F8F8;
+    height: 424px;
+}
+
+.shoping {
+    padding: 30px 0 0 15px;
+}
+
+.shoping .shop {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    height: 317px;
+}
+
+
+
+.shop .cart {
+    width: 837px;
+    height: 115.8px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 38px 0 0 40px;
+}
+
+.cart h4 {
+    font-family: dosis;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+}
+
+.cart p {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.shop .cart-form {
+    width: 428px;
+    height: 317px;
+    margin-left: 36px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+
+}
+
+.cart-form h4 {
+    font-family: dosis;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #E96D6D;
+    padding-top: 30px;
+}
+
+.shoping-detail {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.shoping-detail p:nth-child(1),
+.shoping-detail p:nth-child(3) {
+    font-family: dosis;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.shoping-detail p:nth-child(2) {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 80px;
+
+}
+
+.shoping-detail::after {
+    content: "";
+    display: block;
+    width: 372px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 1.288);
+    position: absolute;
+    top: 64px;
+    left: 32px;
+}
+
+.Switzerland {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Switzerland p {
+    font-family: dosis;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.Switzerland p:nth-child(1) {
+    margin-right: 100px;
+}
+
+.Bestellen {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 33px;
+}
+
+.Bestellen button {
+    width: 174.03px;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #E96D6D;
+    padding: 20px 45.67px 20px 46px;
+    border-radius: 44px;
+    border: 1px;
+    cursor: pointer;
+}
+
+.Bestellen button:hover {
+    background-color: #D45A5A;
+}
+
+
+.Bestellen p {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/* Page-5 ended */
+/* Page-6 Login started */
+.bgclr-p6 {
+    height: 700px;
+    background-color: #F8F8F8;
+}
+
+.log {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.log .login {
+    width: 453px;
+    height: 642.78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F8F8F8;
+
+
+}
+
+.login .box {
+    width: 450px;
+    height: 342.39px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+
+
+}
+
+.login .box label,
+.pass-forget label {
+    font-family: dosis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 38px 0 0 40px;
+
+}
+
+.login .box input,
+.pass-forget input {
+    width: 355px;
+    height: 44px;
+    padding-left: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #F8F8F8;
+    border: 1px solid #080E141A;
+    margin: 0px 0 0 36px;
+}
+
+
+.login .box input:focus,
+.pass-forget input:focus {
+    border-color: #E96D6D;
+}
+
+.login .box button,
+.pass-forget button {
+    width: 140.83px;
+    height: 42px;
+    padding: 11px 30.68px 11px 31px;
+    border-radius: 44px;
+    color: #FFFFFF;
+    background: #E96D6D;
+    border: 1px solid #E96D6D;
+    margin: 18px 0 0 38px;
+    cursor: pointer;
+}
+
+.login .box button:hover,
+.pass-forget button:hover {
+    background-color: #D45A5A;
+}
+
+#reset {
+    width: 162px;
+}
+
+.login .pass-forget {
+    width: 450px;
+    height: 250.39px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+
+}
+
+.box h2,
+.pass-forget h2 {
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 24px 0 0 40px;
+}
+
+/* Page-6 login ended */
+/* Page-7 registeration started */
+.bgclr-p7 {
+    background-color: #F8F8F8;
+    height: 660px;
+}
+
+.register {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.register .registeration {
+    width: 453px;
+    height: 576.78px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+
+}
+
+.registeration h2 {
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 24px 0 0 40px;
+}
+
+.registeration label {
+    font-family: dosis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 38px 0 0 40px;
+
+}
+
+.registeration input {
+    width: 355px;
+    height: 44px;
+    padding-left: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #F8F8F8;
+    border: 1px solid #080E141A;
+    margin: 0px 0 0 36px;
+}
+
+.registeration input:focus {
+    border-color: #E96D6D;
+}
+
+.registeration button {
+    width: 140.83px;
+    height: 42px;
+    padding: 11px 30.68px 11px 31px;
+    border-radius: 44px;
+    color: #FFFFFF;
+    background: #E96D6D;
+    border: 1px solid #E96D6D;
+    margin: 18px 0 0 38px;
+    cursor: pointer;
+}
+
+.registeration button:hover {
+    background-color: #D45A5A;
+}
+
+/* Page-7 .registeration  ended */
+/* Page-8 contact started */
+.bgclr-p8 {
+    background-color: #F8F8F8;
+    height: 560px;
+}
+
+.contact {
+    width: 97.7%;
+    padding: 30px 0 0 17px;
+
+}
+
+.contact .contact-info {
+    display: flex;
+    justify-content: space-between;
+    height: 494px;
+    background-color: #F8F8F8;
+}
+
+.contact-info .telefon {
+    width: 450px;
+    height: 493px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
+.telefon h2 {
+    font-family: dosis;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+    padding: 16px 0 0 30px;
+}
+
+.telefon p {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: pre-line;
+    padding: 9px 0 0 30px;
+}
+
+.telefon h6 {
+    font-family: dosis;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 16px 0 0 30px;
+}
+
+.telefon span {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 9px 0 0 30px;
+    color: #E96D6D;
+    cursor: pointer;
+}
+
+.telefon span:hover {
+    color: #F3B1B1;
+}
+
+
+.contact-info .contact-form {
+    margin-left: 30px;
+    width: 930px;
+    height: 493px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
+.contact-form h3 {
+    font-family: dosis;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+    padding: 16px 0 0 30px;
+}
+
+.names {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    width: 609px;
+}
+
+.names .fname,
+.lname {
+    width: 260px;
+}
+
+.names .fname label,
+.lname label {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.names .fname input,
+.lname input {
+    width: 240px;
+    height: 37px;
+    padding-left: 15px;
+    margin-top: 8px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #F1F1F1;
+}
+
+.comm-medium {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 26px;
+    width: 609px;
+}
+
+.comm-medium .email,
+.tel-no {
+    width: 260px;
+}
+
+.comm-medium .email label,
+.tel-no label {
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.comm-medium .email input,
+.tel-no input {
+    width: 240px;
+    height: 37px;
+    padding-left: 15px;
+    margin-top: 8px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #F1F1F1;
+}
+
+.contact-form .news {
+    margin: 30px 0 0 35px;
+}
+
+.contact-form .news label {
+    display: block;
+    font-family: dosis;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contact-form .news textarea {
+    width: 528px;
+    height: 83px;
+    padding-left: 15px;
+    margin-top: 8px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #F1F1F1;
+}
+
+.contact-form button {
+    width: 119.44px;
+    height: 38px;
+    padding: 9px 22.69px 10px 23px;
+    border-radius: 20px;
+    border: 1px solid #e96d6d;
+    background-color: #E96D6D;
+    color: #FFFFFF;
+    margin: 33px 0 0 35px;
+    cursor: pointer;
+
+}
+
+.contact-form input:focus {
+    border-color: #E96D6D;
+}
+
+.contact-form button:hover {
+    background-color: #D45A5A;
+}
+
+/* Page-8_contact ended */
+/* Page-9_sets started */
+.bgclr-p9 {
+    background-color: #F8F8F8;
+    height: 900px;
+}
+
+.set-products {
+    width: 926px;
+
+}
+
+.set-products .set {
+    width: 906px;
+    height: 94.8px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.set h2 {
+    font-family: dosis;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+
+}
+
+.set-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.set-cards .cards {
+    width: 285px;
+    height: 358px;
+
+}
+
+.set-cards .cards img {
+    cursor: pointer;
+    width: 285px;
+}
+
+.set-cards .cards .contain {
+    background-color: #FFFFFF;
+    height: 58px;
+    bottom: 32px;
+    position: relative;
+    border-radius: 30px;
+    padding: 20px;
+    line-height: 14px;
+}
+
+
+.set-cards .cards .contain h5 {
+    font-family: dosis;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E96D6D;
+    cursor: pointer;
+}
+
+.set-cards .cards .contain h5:hover {
+    color: #000000;
+}
+
+.set-cards .cards .contain h6 {
+    font-family: Open Sans;
+    display: inline;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A4747;
+}
+
+.set-cards .cards .contain span {
+    font-family: dosis;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+}
+
+.set-cards .cards .contain span::after {
+    content: "";
+    display: block;
+    width: 57px;
+    height: 1px;
+    background-color: #3A4747;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+/* Page-9-sets ended */
+/* Page-10_buttons started */
+
+/* there is no more css code of page-10 because page-10 uses the css code of page-9 */
+/* Page-10 ended */
+/* Page-11 started */
+/* there is no more css code of page-11 because page-11 uses the css code of page-2 */
+/* Page-11 ended */
